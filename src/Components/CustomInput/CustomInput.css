@@ -1,0 +1,19 @@
+.customInput {
+  font-size: var(--font-14);
+  font-weight: 500;
+  color: #1E1F21;
+  padding: 18px 16px 6px;
+  background: #ffffff;
+  border: 1px solid #afabac;
+  border-radius: 6px;
+  height: 48px;
+}
+
+.customInput:hover {
+  border-color: var(--dark);
+}
+
+.customInput:focus {
+  border-color: var(--dark);
+  box-shadow: none;
+}

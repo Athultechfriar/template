@@ -1,0 +1,55 @@
+.profileSettings {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.profileCardWrap {
+    background-color: var(--white);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: var(--size-24) var(--size-32);
+}
+
+.userProfileDetails h3 {
+    font-weight: 600;
+    font-size: calc(var(--font-16) + 2px);
+    line-height: 120%;
+    color: #212121;
+    margin-bottom: 5px;
+}
+
+.userProfileDetails p {
+    font-weight: 500;
+    font-size: var(--font-16);
+    line-height: 130%;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+.profileCardContains {
+    padding-left: var(--size-14);
+}
+
+.aboutDetailsRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--size-40) var(--size-30);
+}
+
+.profileInnterTitle {
+    font-weight: 500;
+    font-size: var(--font-13);
+    line-height: var(--size-16);
+    color: var(--gray);
+}
+
+.notificationCheckListCol {
+    grid-gap: calc(var(--size-40) + 10px);
+}
+
+.notificationCheckListCol label {
+    color: var(--black);
+}

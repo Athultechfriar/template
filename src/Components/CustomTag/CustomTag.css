@@ -1,0 +1,29 @@
+.CustomTag {
+  border: 1px solid transparent;
+  border-radius: 100px;
+  padding: 3px 8px;
+  line-height: 1;
+  font-size: var(--font-11);
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.TagRed {
+  background-color: #ffaaaf;
+  border-color: #fe464b;
+}
+
+.TagYellow {
+  background-color: #fcf0d6;
+  border-color: #f2b531;
+}
+
+.TagBlue {
+  background-color: #e0f3fd;
+  border-color: #64c5f5;
+}
+
+.TagGreen {
+    background-color: #CCEAD7;
+    border-color:  #39BB85;
+}

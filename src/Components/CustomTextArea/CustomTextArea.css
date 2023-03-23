@@ -1,0 +1,20 @@
+.customTextArea:global.ant-input {
+    font-size: var(--font-14);
+    font-weight: 500;
+    color: #1E1F21;
+    padding: 16px var(--size-16) calc(var(--size-16) + 1px);
+    background: #ffffff;
+    border: 1px solid #afabac;
+    border-radius: 6px;
+    resize: none;
+    height: 100px;
+  }
+  
+  .customTextArea:global.ant-input:hover {
+    border-color: var(--dark);
+  }
+  
+  .customTextArea:global.ant-input:focus {
+    border-color: var(--dark);
+    box-shadow: none;
+  }

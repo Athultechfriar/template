@@ -1,0 +1,48 @@
+.UploadIndicator {
+  background: #f8f8f8;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-color: #f8f8f8;
+  overflow: hidden;
+  padding: 0;
+}
+.IconSpacing{
+  padding: var(--size-10);
+}
+.ImgSpacing{
+  padding: 0;
+}
+.UploadIndicator img {
+  object-fit: contain;
+}
+.ImgUploaderWrapper{
+  position: relative;
+  width: max-content;
+}
+.ImgUploader{
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  z-index: -1;
+}
+.ImgUploaderWrapper label{
+  color: var(--red);
+  cursor: pointer;
+  text-decoration: underline !important;
+  font-weight: 600;
+  font-size: var(--font-11);
+  cursor: pointer;
+}
+.ImgUploaderWrapper label:hover{
+  color: var(--redHover);  
+} 

@@ -1,0 +1,29 @@
+.customLink {
+  color: var(--red);
+  font-weight: 600;
+}
+.customLink:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+.underline {
+  text-decoration: underline;
+}
+.underline:hover {
+  text-decoration: none;
+}
+.large {
+  font-size: var(--font-13);
+}
+.medium {
+  font-size: var(--font-11);
+}
+.small {
+  font-size: 8px;
+}
+.customLink {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: underline;
+
+}

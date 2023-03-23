@@ -1,0 +1,55 @@
+ .ant-radio-checked .ant-radio-inner {
+    border-color: var(--red) !important;
+    border-width: 2px;
+}
+ .ant-radio-inner::after {
+    background-color: var(--red) !important;
+    min-width: 10px;
+    min-height: 10px;
+    width: 10px;
+    height: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.ant-radio-input:hover{
+    /* border-color: var(--dark); */
+}
+.ant-space-item:hover .ant-radio-checked .ant-radio-inner {
+    border-color: var(--red);
+}
+ .ant-radio-wrapper:hover .ant-radio, 
+ .ant-radio:hover .ant-radio-inner,
+ .ant-radio-input:focus + .ant-radio-inner {
+    border-color: var(--red);
+}
+ .ant-radio-wrapper:hover .ant-radio-inner {
+    border-color: var(--red);
+}
+ .ant-radio-inner {
+    width: 18px;
+    height: 18px;
+}
+ .ant-radio-input:focus + .ant-radio-inner {
+    box-shadow: unset;
+}
+ .ant-radio-checked::after {
+display:none;
+}
+.CustomRadioButton  .ant-radio-wrapper {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: var(--font-13);
+    line-height: 1;
+}
+.CustomRadioButton span.ant-radio + * {
+    /* padding-right: 19px; */
+    padding-left: var(--size-11);
+}
+.CustomRadioButton .ant-radio-wrapper .ant-radio-checked .ant-radio-inner{
+    background-color: white;
+}

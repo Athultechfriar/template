@@ -1,0 +1,226 @@
+/* TABLE */
+.custom-table
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  content: unset;
+  background-color: red;
+}
+
+.custom-table .ant-table {
+  background-color: transparent;
+  font-size: var(--font-13);
+}
+
+.custom-table .ant-table table {
+  border-collapse: separate;
+  border-spacing: 0 calc(var(--size-16) / 4 );
+  color: #1e1f21;
+}
+
+#custom-table thead tr th {
+  background-color: transparent;
+  padding-block: 0;
+  font-weight: 600;
+  font-size: var(--font-11);
+  border: 0;
+  color: var(--dark);
+}
+
+.custom-table tbody tr {
+  box-shadow: 0px 0px 6px rgb(30 31 33 / 2%);
+}
+
+#custom-table tbody tr td {
+  padding: calc(var(--size-10) + 1.5px) var(--size-16);
+  background-color: var(--white);
+  font-size: var(--font-13);
+}
+
+.custom-table tbody tr td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.custom-table tbody tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.custom-table tbody tr td:only-child {
+  border-radius: 8px;
+}
+
+.custom-table .ant-table-selection-column {
+  padding-left: var(--size-20);
+}
+
+.custom-table .ant-table-tbody > tr.ant-table-row-selected > td,
+.custom-table .ant-table-tbody > tr.ant-table-row-selected:hover > td {
+  background-color: #e9e9e9;
+  border-color: #e9e9e9;
+}
+
+.custom-table .custom-table thead .ant-checkbox-inner {
+  border: 1.5px solid #777676;
+}
+
+.custom-table .ant-checkbox-inner,
+.custom-table .ant-checkbox-indeterminate .ant-checkbox-inner {
+  border: 1px solid var(--black);
+  border-radius: 4px;
+}
+
+.custom-table .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  background-color: var(--red);
+}
+
+.custom-table .ant-checkbox-checked::after {
+  content: unset;
+}
+
+.custom-table .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: var(--red);
+  background-color: var(--red);
+}
+
+.custom-table .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.custom-table .ant-checkbox:hover .ant-checkbox-inner,
+.custom-table .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: var(--red);
+}
+
+.custom-table .ant-checkbox-inner::after {
+  transform: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+  display: block;
+}
+
+.custom-table .ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: var(--red);
+  /* background-image: url("/Images/icons/Checked.svg"); */
+  background-image: url("../public/Images/icons/Checked.svg");
+  background-size: 10px 10px;
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: none;
+  left: 0;
+  top: 0;
+  border: 0;
+}
+
+.custom-table .ant-pagination .ant-pagination-total-text {
+  margin-right: auto;
+}
+
+.custom-table .ant-pagination-item,
+.custom-table .ant-pagination-prev,
+.custom-table .ant-pagination-next {
+  min-width: auto;
+  height: 26px;
+  text-align: center;
+  font-size: var(--font-15);
+  font-weight: 500;
+  color: #344054;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.custom-table .ant-pagination-item:hover,
+.custom-table .ant-pagination-item:focus-visible {
+  border-color: transparent;
+  color: var(--red);
+}
+
+.custom-table .ant-pagination-item:focus-visible {
+  border-color: var(--red);
+  color: var(--white);
+}
+
+.custom-table .ant-pagination-item a,
+.custom-table .ant-pagination-prev .ant-pagination-item-link,
+.custom-table .ant-pagination-next .ant-pagination-item-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-table .ant-pagination-item:hover a,
+.custom-table .ant-pagination-item:focus-visible a {
+  color: var(--red);
+}
+
+.custom-table .ant-pagination-item-active {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  width: 26px;
+}
+
+.custom-table .ant-pagination-item-active:focus-visible {
+  border-color: var(--red);
+}
+
+.custom-table .ant-pagination-item-active:focus-visible a {
+  color: var(--white);
+}
+
+.custom-table .ant-pagination-item-active:hover {
+  border: 1px solid var(--red);
+}
+
+.custom-table .ant-pagination-item-active a {
+  color: var(--white);
+}
+
+.custom-table .ant-pagination-item-active:hover a {
+  color: var(--white);
+}
+
+.custom-table .ant-pagination-prev .ant-pagination-item-link,
+.custom-table .ant-pagination-next .ant-pagination-item-link {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: var(--black);
+}
+
+.custom-table .ant-pagination-prev:hover .ant-pagination-item-link,
+.custom-table .ant-pagination-next:hover .ant-pagination-item-link {
+  color: var(--red);
+  border-color: transparent;
+}
+
+.custom-table .ant-pagination-disabled:hover .ant-pagination-item-link {
+  color: var(--black);
+  border-color: var(--black);
+}
+
+.custom-table .ant-pagination-prev:focus-visible .ant-pagination-item-link,
+.custom-table .ant-pagination-next:focus-visible .ant-pagination-item-link {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.custom-table .ant-pagination-disabled:hover .ant-pagination-item-link {
+  border-color: #d9d9d9;
+  color: #344054;
+}
+
+.custom-table .ant-pagination-options {
+  display: none;
+}
+
+.custom-table tr.ant-table-expanded-row > td,
+tr.ant-table-expanded-row:hover > td {
+  background-color: var(--white);
+}
+/* TABLE END */

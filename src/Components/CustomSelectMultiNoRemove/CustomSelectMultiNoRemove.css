@@ -1,0 +1,72 @@
+.customSelect {
+  width: 100%;
+}
+
+.ant-select .ant-select-selector {
+  font-size: var(--font-14) !important  ;
+  font-weight: 500;
+  color: #1e1f21;
+  background: #ffffff;
+  border: 1px solid #afabac !important;
+  border-radius: 6px;
+  width: 100%;
+  /* background-color:#1e1f21; */
+    height: 48px !important;
+    padding: var(--size-16) var(--size-16) 0;
+}
+.customSelect .ant-select:not(.ant-select-multiple)  .ant-select-selector .ant-select-selection-search-input {
+  padding: var(--size-18) 0px 6px !important;
+  height: auto;
+}
+.customSelect .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: var(--dark);
+}
+.customSelect .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  box-shadow: none;
+  border-color: var(--dark);
+}
+.customSelect .ant-select-single .ant-select-selector .ant-select-selection-search {
+  left: 16px;
+}
+.customSelect .ant-select-selection-placeholder {
+  line-height: 56px;
+}
+.customSelect .ant-select-arrow {
+  right: 16px;
+}
+.customSelectMenu {
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.17);
+  border-radius: 6px;
+  color: var(--dark);
+}
+.customSelectMenu .ant-select-item {
+  line-height: 1;
+  padding: 8px var(--size-16);
+}
+.customSelectMenu .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #e9e9e9;
+}
+.customSelectMenu .ant-select-item-option-selected:not(.ant-select-item-option-disabled) .ant-select-item-option-state {
+  color: var(--dark);
+}
+.customSelect .ant-select-selection-item {
+  display: flex;
+  line-height: 1;
+  height: auto;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  font-weight: 500;
+}
+.customSelect .ant-select-selection-overflow-item:not(:nth-last-child(2)) .ant-select-selection-item:after {
+  content: ',';
+}
+.customSelect .ant-select-selection-search {
+  margin-inline-start: 0;
+}
+.customSelect .ant-select-selection-item-content {
+  margin-right: 0;
+}
+.customSelect .ant-select-selection-item-remove {
+  display: none;
+}

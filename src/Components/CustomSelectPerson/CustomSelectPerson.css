@@ -1,0 +1,73 @@
+.customSelect {
+  width: 100%;
+}
+
+.customSelect:global(.ant-select .ant-select-selector) {
+  font-size: var(--font-14);
+  font-weight: 500;
+  color: #1e1f21;
+  background: #ffffff;
+  border: 1px solid #afabac;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 48px !important;
+  padding: 16px 16px 0;
+}
+.customSelect:global(.ant-select:not(.ant-select-multiple)  .ant-select-selector .ant-select-selection-search-input) {
+  padding: 18px 0px 6px !important;
+  height: auto;
+}
+.customSelect:global(.ant-select:not(.ant-select-disabled):hover .ant-select-selector) {
+  border-color: var(--dark);
+}
+.customSelect:global(.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector) {
+  box-shadow: none;
+  border-color: var(--dark);
+}
+.customSelect:global(.ant-select-single .ant-select-selector .ant-select-selection-search) {
+  left: 16px;
+}
+.customSelect :global .ant-select-selection-placeholder {
+  line-height: 56px;
+}
+.customSelect :global .ant-select-arrow {
+  right: 16px;
+}
+.customSelectMenu {
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.17);
+  border-radius: 6px;
+  color: var(--dark);
+}
+.customSelectMenu :global .ant-select-item {
+  line-height: 1;
+  padding: 8px 16px;
+}
+.customSelectMenu :global .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #e9e9e9;
+}
+.customSelect :global .ant-select-selection-item {
+  display: inline-flex;
+  flex: inherit;
+  padding: 2px 8px 2px 4px;
+  font-size: var(--font-13);
+  line-height: 1;
+  background: #EEEEEE;
+  border-radius: var(--size-30);
+  color: var(--dark);
+  height: 25px;
+  padding: 3px 10px 3px 3px !important;
+  margin-top: 2px;
+}
+.customSelect :global .ant-select-selection-item .ant-space-item {
+  display: inline-flex;
+}
+.customSelect :global .ant-select-selection-search {
+  margin-inline-start: 0;
+}
+.customSelect :global .ant-select-selection-item-remove {
+  display: flex;
+  align-items: center;
+}
+.customSelectMenu :global .ant-select-item-option-selected:not(.ant-select-item-option-disabled) .ant-select-item-option-state {
+  color: var(--dark);
+}

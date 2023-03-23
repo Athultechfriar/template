@@ -1,0 +1,160 @@
+.CustomDatePicker {
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  padding: 18px 16px 6px;
+  background: #ffffff;
+  border: 1px solid #afabac;
+  border-radius: 6px;
+}
+
+.CustomDatePicker:hover {
+  border-color: var(--dark);
+}
+
+.CustomDatePicker:focus {
+  border-color: var(--dark);
+  box-shadow: none;
+}
+
+.CustomDatePicker :global .ant-picker-input > input {
+  font-weight: 500;
+}
+
+.CustomDatePicker :global .ant-picker-suffix,
+.CustomDatePicker :global .ant-picker-clear {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  top: -2px;
+  cursor: pointer;
+  transform: none;
+  color: var(--dark);
+}
+
+.CustomDatePicker:global.ant-picker-focused {
+  box-shadow: none;
+  border: 1px solid var(--dark);
+}
+
+/* .CustomDatePickerCalendar :global .ant-picker-panel-container {
+  border-radius: 6px;
+}
+
+.CustomDatePickerCalendar :global .ant-picker-date-panel {
+  width: 257px;
+}
+
+.CustomDatePickerCalendar :global .ant-picker-cell,
+.CustomDatePickerCalendar :global .ant-picker-cell {
+  font-size: var(--font-12);
+  font-weight: 400;
+}
+
+.CustomDatePickerCalendar :global .ant-picker-date-panel .ant-picker-content {
+  width: 100%;
+}
+
+.CustomDatePickerCalendar :global .ant-picker-date-panel .ant-picker-body {
+  padding: 0;
+}
+
+.CustomDatePickerCalendar :global .ant-picker-cell-selected {
+  font-weight: 600;
+  position: relative;
+}
+
+.CustomDatePickerCalendar :global .ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: transparent;
+  color: var(--dark);
+}
+
+.CustomDatePickerCalendar :global .ant-picker-cell-selected::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgb(251, 186, 7, 0.25);
+} */
+.CustomDatePickerCalendar :global .ant-picker-content th {
+  color: var(--red)!important;
+}
+.CustomDatePickerCalendar :global .ant-picker-header-super-prev-btn,
+.CustomDatePickerCalendar :global  .ant-picker-header-super-next-btn {
+  display: none;
+}
+
+.CustomDatePickerCalendar :global .ant-picker-cell{
+  color: #7E8599;
+}
+.CustomDatePickerCalendar :global .ant-picker-cell.ant-picker-cell-in-view {
+  color: var(--dark);
+}
+.CustomDatePickerCalendar :global  .ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-today{
+  font-weight: 600;
+}
+
+.CustomDatePickerCalendar :global  .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  display: none;
+}
+.CustomDatePickerCalendar :global .ant-picker-panel-container {
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.17);
+  border-radius: 6px;
+}
+.CustomDatePickerCalendar :global  .ant-picker-cell {
+  padding: 0;
+}
+.CustomDatePickerCalendar :global  .ant-picker-dropdown {
+  font-size: var(--font-12);
+}
+.CustomDatePickerCalendar :global  .ant-picker-date-panel .ant-picker-body {
+  padding: 0;
+}
+.CustomDatePickerCalendar :global .ant-picker-cell .ant-picker-cell-inner {
+  min-width: 37px;
+  height: 37px;
+  line-height: 37px;
+  border-radius: var(--size-20);
+}
+.CustomDatePickerCalendar :global  .ant-picker-dropdown {
+  font-size: var(--font-12);
+}
+.CustomDatePickerCalendar :global .ant-picker-content th, .CustomDatePickerCalendar :global .ant-picker-content td {
+  min-width: 37px;
+}
+.CustomDatePickerCalendar :global .ant-picker-date-panel .ant-picker-content {
+  width: 100%;
+}
+.CustomDatePickerCalendar :global .ant-picker-decade-panel,
+.CustomDatePickerCalendar :global .ant-picker-year-panel, 
+.CustomDatePickerCalendar :global .ant-picker-quarter-panel,
+.CustomDatePickerCalendar :global .ant-picker-month-panel,
+.CustomDatePickerCalendar :global .ant-picker-week-panel, 
+.CustomDatePickerCalendar :global .ant-picker-date-panel,
+.CustomDatePickerCalendar :global .ant-picker-time-panel {
+  width: 260px;
+}
+.CustomDatePickerCalendar :global .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner{
+  background: rgb(251 187 9 / 25%);
+  color: var(--dark);
+  font-weight: 600;
+}
+.CustomDatePickerCalendar :global .ant-picker-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner, 
+.CustomDatePickerCalendar :global .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end) .ant-picker-cell-inner {
+  background: rgb(128 128 128 / 10%);
+  color: var(--dark);
+}
+.CustomDatePickerCalendar :global .ant-picker-header button {
+  color: #717171;
+}
+.CustomDatePickerCalendar :global .ant-picker-header-view button,
+.CustomDatePickerCalendar :global .ant-picker-header button:hover {
+  color: var(--dark);
+  font-weight: 600;
+}

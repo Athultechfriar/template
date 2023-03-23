@@ -1,0 +1,55 @@
+.logoWrapper {
+    padding-bottom: 100%;
+    position: relative;
+    background-color: var(--red);
+  }
+  .logoInner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aside {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebarMenu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 0 auto;
+    justify-content: space-between;
+  }
+  .sidebarMenuTop {
+    width: 100%;
+    margin-top: calc(30px *2);
+  }
+  .sidebarMenuBottom {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sidebarProfile {
+    margin-top: 30px;
+  }
+  .sidebarProfile img {
+    border-radius: 50%;
+  }
+  .ProfileDropDownMenu {
+    transform: translate(45px, 40px);
+  }
+  .ProfileDropDownMenu svg {
+    width: 20px;
+  }
+  .ProfileDropDownMenu span:nth-child(2){
+    color: black;
+    font-size: 13px;
+    font-weight: 400 !important;
+  }
+
+

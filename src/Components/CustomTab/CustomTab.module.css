@@ -1,0 +1,30 @@
+.CustomTabs :global .ant-tabs-ink-bar {
+  background: var(--red);
+}
+
+.CustomTabs :global .ant-tabs-tab {
+  padding: 0 0 var(--size-12) 0;
+  font-size: var(--font-14);
+}
+.CustomTabs :global .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--red);
+}
+.CustomTabs .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0 0 0 43px;
+}
+.CustomTabs :global .ant-tabs-tab-btn {
+  color: var(--text);
+}
+.CustomTabs :global .ant-tabs-tab-btn:hover,
+.CustomTabs :global .ant-tabs-tab-btn:focus,
+.CustomTabs :global .ant-tabs-tab-remove:focus,
+.CustomTabs :global .ant-tabs-tab-btn:active,
+.CustomTabs :global .ant-tabs-tab-remove:active {
+  color: var(--red);
+}
+.CustomTabs .ant-tabs-nav {
+  margin-bottom: var(--size-15);
+}
+.CustomTabs :global .ant-tabs-tab:hover {
+  color: var(--red);
+}

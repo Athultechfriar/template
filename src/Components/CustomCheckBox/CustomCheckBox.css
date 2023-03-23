@@ -1,0 +1,42 @@
+.CheckBoxInput {
+  opacity: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.CustomCheckBoxWrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--size-18);
+}
+.CustomCheckBoxWrapper:last-child {
+  margin-bottom: 0;
+}
+.CheckBoxInput,
+.CustomCheckBoxInput {
+  width: 18px;
+  height: 18px;
+}
+.CustomCheckBoxInput {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1.5px solid;
+  border-color: #777676;
+  border-radius: 4px;
+  pointer-events: none;
+}
+.CustomCheckBoxLabel {
+  padding-left: 11px;
+  font-weight: 500;
+  font-size: var(--font-13);
+  line-height: 1.5;
+}
+.CheckBoxInput:checked + .CustomCheckBoxInput {
+  border-color: var(--red);
+  background-image: url("../public//Images//icons/Checked.svg");
+  background-size: 10px 10px;
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  background-position: center;
+}

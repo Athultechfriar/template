@@ -1,0 +1,25 @@
+.pageWrapper {
+  position: relative;
+  min-height: 100vh;
+}
+.sidebarWrapper {
+  position: fixed;
+  width: 90px;
+  left: 0;
+  height: 100%;
+  background-color: #000;
+}
+.main {
+  margin-left: 90px;
+  min-height: 100vh;
+  /* padding: 32px; */
+}
+
+@media screen and (max-width: 1399px) {
+  .sidebarWrapper {
+    width: 75px;
+  }
+  .main {
+    margin-left: 75px;
+  }
+}

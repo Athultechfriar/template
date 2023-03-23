@@ -1,0 +1,112 @@
+.profileWrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: var(--size-16);
+}
+
+.profileCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+
+.profileCard:hover {
+  box-shadow: 0px 28px 68px rgba(0, 0, 0, 0.11);
+}
+
+.profileCardContent {
+  position: relative;
+  padding: var(--size-30) 0 var(--size-16);
+}
+
+.profileImg {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  margin-bottom: var(--size-20);
+  text-align: center;
+}
+
+.profileImg img {
+  position: relative;
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-border-radius: 100%;
+}
+
+.profileCardContent .profileEmail {
+  display: inline-block;
+  margin-bottom: var(--size-12);
+  word-break: break-word;
+  padding: 0 4px;
+}
+
+.profileCardContent .location {
+  font-size: var(--font-12);
+}
+
+.ChartViewActive :global .ant-tabs-nav {
+  justify-content: flex-end;
+}
+
+.profileCard .profession {
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--size-16) + 1px) 0;
+  width: 100%;
+  border-top: 1px solid #e7e5e4;
+  font-weight: 500;
+  font-size: var(--font-13);
+  line-height: 1.2;
+}
+
+.profileCardOptions {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.profileCard:hover .profileCardOptions {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ChartViewActive :global .ant-tabs-nav-wrap {
+  display: none !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .profileWrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .profileWrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

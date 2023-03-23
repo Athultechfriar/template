@@ -1,0 +1,14 @@
+.activityWrap {
+  margin-bottom: var(--size-20);
+  position: relative;
+}
+
+.activityWrap:not(:last-child):before {
+  position: absolute;
+  top: 30px;
+  left: 11px;
+  content: '';
+  height: 70%;
+  width: 1px;
+  background-color: #DEDEDE;
+}

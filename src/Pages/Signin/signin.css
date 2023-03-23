@@ -1,0 +1,54 @@
+.signInWrapper {
+  background-color: var(--white);
+  min-height: 100vh;
+}
+.signInPoster {
+  min-height: 100vh;
+  background-color: var(--red);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.signInForm {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc((var(--size-20)*2) + var(--size-10));
+}
+.signInFormInner {
+  width: 100%;
+  max-width: 402px;
+}
+.logo {
+  margin-bottom: calc(var(--size-16) * 3);
+}
+.signInPosterLogo {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  transform: translateX(-22%);
+  max-width: 100%;
+}
+.signInText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 64vh;
+  padding: calc((var(--size-20)*2) + 10px) calc((var(--size-20)*2) + 10px) 15.5vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.192226) 28.65%, rgba(0, 0, 0, 0.85) 100%, #000000 100%);
+}
+.signInText h2 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: calc((var(--size-16)*2) + 2px);
+  line-height: 1.4;
+  margin-bottom: calc(var(--size-10));
+}
+.signInText p {
+  color: var(--white);
+  font-weight: 500;
+  font-size: var(--font-16);
+  margin-bottom: 0;
+}

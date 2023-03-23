@@ -1,0 +1,19 @@
+.SidebarLinkTooltip .ant-tooltip {
+    padding-top: 0;
+  }
+  
+  .SidebarLinkTooltip .ant-tooltip .ant-tooltip-arrow {
+    display: none;
+  }
+  
+  .SidebarLinkTooltip  .ant-tooltip-inner {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 8px;
+    min-height: unset;
+    background-color: white;
+    color: var(--dark);
+    font-weight: 500;
+    border-radius: 4px;
+    line-height: 1;
+  }

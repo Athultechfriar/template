@@ -1,0 +1,24 @@
+.customModal .ant-modal {
+  color: var(--dark);
+}
+.customModal .ant-modal-content {
+  padding: var(--size-40) !important;
+  border-radius: 6px;
+}
+.customModal  .ant-modal-body {
+  line-height: 1.3;
+  padding: 0;
+}
+.customModal  .ant-modal-footer {
+  padding: var(--size-32) 0 0;
+  text-align: left;
+  border: 0;
+}
+.customModal  .ant-modal-close {
+  color: var(--dark);
+}
+
+.customModal  .ant-btn {
+  padding-left: var(--size-24);
+  padding-right: var(--size-24);
+}

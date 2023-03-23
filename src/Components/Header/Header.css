@@ -1,0 +1,14 @@
+.CreateDropdownMenu svg {
+  width: 25px;
+  height: 20px;
+}
+
+.NewAnnouncementModal  .page-title-label {
+  max-width: 410px;
+}
+
+@media screen and (max-width: 767px) {
+  .headerBtn span {
+    display: none;
+  }
+}
